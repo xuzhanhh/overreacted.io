@@ -4,7 +4,7 @@ import React from 'react'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 
-import profilePic from './profile-pic.jpg'
+import profilePic from './bbb.png'
 import { rhythm } from '../utils/typography'
 
 class Bio extends React.Component {
@@ -24,12 +24,14 @@ class Bio extends React.Component {
             marginBottom: 0,
             width: rhythm(2),
             height: rhythm(2),
+            borderRadius: 40,
           }}
         />
-        <p style={{ maxWidth: 310 }}>
-          Personal blog by <a href="https://mobile.twitter.com/dan_abramov">Dan Abramov</a>.
+        <p style={{ maxWidth: 250 }}>
+          Personal blog by <a href="https://github.com/xuzhanhh">xuzhanhh</a>.
+          <br></br>
           {' '}
-          I&nbsp;explain with words and code.
+          😋
         </p>
       </div>
     )
