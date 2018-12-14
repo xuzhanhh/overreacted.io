@@ -1,7 +1,11 @@
 ---
+
 title: Inside Fiber
+
 date: '2018-12-13'
+
 spoiler: 当我们在讨论Fiber时，我们在讨论什么。
+
 ---
 
 [read this](https://medium.com/react-in-depth/inside-fiber-in-depth-overview-of-the-new-reconciliation-algorithm-in-react-e1c04700ef6e)
@@ -34,9 +38,9 @@ function updateHostComponent(current, workInProgress, renderExpirationTime) {...
 
 ​	例如，我们的更新会导致`c2`插入到DOM中，`d2`和`c1`改变DOM属性，`b2`触发生命周期。effect list会连接他们所以React可以跳过其他结点。
 
-![img](/Users/xuzhanhong1/Documents/1*Q0pCNcK1FfCttek32X_l7A.png)
+![img](http://pjpqjxkf6.bkt.clouddn.com/1%2AQ0pCNcK1FfCttek32X_l7A.png)
 
-![img](/Users/xuzhanhong1/Documents/1*mbeZ1EsfMsLUk-9hOYyozw.png)
+![img](http://pjpqjxkf6.bkt.clouddn.com/1%2AmbeZ1EsfMsLUk-9hOYyozw.png)
 
 可以看得到，React会从children再到parents执行effects。
 
@@ -121,7 +125,7 @@ function workLoop(isYieldy) {
 - [completeUnitOfWork](https://github.com/facebook/react/blob/95a313ec0b957f71798a69d8e83408f40e76765b/packages/react-reconciler/src/ReactFiberScheduler.js#L879)
 - [completeWork](https://github.com/facebook/react/blob/cbbc2b6c4d0d8519145560bd8183ecde55168b12/packages/react-reconciler/src/ReactFiberCompleteWork.js#L532)
 
-![img](/Users/xuzhanhong1/Documents/1*A3-yF-3Xf47nPamFpRm64w.png)
+![img](http://pjpqjxkf6.bkt.clouddn.com/1%2AA3-yF-3Xf47nPamFpRm64w.gif)
 
 [这里是视频](https://vimeo.com/302222454)
 
