@@ -65,7 +65,7 @@ class BlogPostTemplate extends React.Component {
             }}
             to={'/'}
           >
-            Overreacted
+            酱香型猫砂盆
           </Link>
         </h3>
         <Bio />
